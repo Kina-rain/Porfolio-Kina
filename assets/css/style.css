@@ -105,7 +105,7 @@ body {
   
    #mainBody {
     padding-top: 130px;
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 50px);
   }
   
   .secMain {
