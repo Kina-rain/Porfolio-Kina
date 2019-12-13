@@ -3,25 +3,15 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #777777;
-    background: url("../images/concrete_seamless.png");
+    background: url("../images/textureBackground.jpg");
+    z-index: -1;
   }
-  
-  * {
-    box-sizing: border-box;
-     }
-  
-  .clsBody {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    clear: both;
-  }
-  
+     
   h1,
   h2,
   h3,
   p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   h1,
@@ -29,14 +19,14 @@ body {
   h3 {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: bold;
-    color: #4aaaa5;
+    color: rgb(58, 53, 53);
   }
   
   h1 {
     padding-bottom: 20px;
     font-size: 30px;
     line-height: 32px;
-    border-bottom: 3px solid #dddddd;
+    border-bottom: 3px solid darkgray;
   }
   
   h2,
@@ -48,7 +38,7 @@ body {
     position: fixed;
     z-index: 99;
     width: 100%;
-    margin: 0 0 30px;
+    margin: 0 0 20px;
     overflow: auto;
     color: #ffffff;
     background: #ffffff;
@@ -84,18 +74,6 @@ body {
     border-left: 3px solid #efefef;
   }
   
-   footer {
-    padding: 30px 0;
-    clear: both;
-    font-size: 12px;
-    color: #ffffff;
-    color: #cccccc;
-    text-align: center;
-    background: #666666;
-    border-top: 10px solid #4aaaa5;
-    height: 50px;
-  }
-  
   h3, h2 {
     padding-bottom: 20px;
     margin-bottom: 15px;
@@ -104,16 +82,20 @@ body {
   }
   
    #mainBody {
-    padding-top: 130px;
+    padding-top: 80px;
+    min-height: calc(100vh - 50px);
+  }
+
+  #mainPortfolio {
+    padding-top: 50px;
     min-height: calc(100vh - 50px);
   }
   
   .secMain {
-    float: left;
-    width: 100%;
-    max-width: 960px;
     padding: 30px;
-    margin: 0 0 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
     background: #ffffff;
     border: 3px solid #dddddd;
   }
@@ -157,10 +139,14 @@ body {
   
   #contactForm ul {
     margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
   }
   
   #contactForm li {
     margin-bottom: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
   }
   
   label,
@@ -196,3 +182,4 @@ body {
     border: 0 none;
   }
   
+ 

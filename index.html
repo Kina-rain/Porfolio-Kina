@@ -1,48 +1,93 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
 
 <head>
   <meta charset="UTF-8">
-  <title>About | Tina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>About | Tina</title>
 </head>
 
 <body>
 
-  <header id="mainheader">
-    <div class="clsBody">
-      <a href="index.html" id="nameTab">Tina</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+  <header>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Resume</a>
+      </li>
+    </ul>
   </header>
 
-  <div id="mainBody" class="clsBody">
-    <section class="secMain">
-      <h1>About Me</h1>
-    
-      <img src="assets/images/TinaProfile.jpg" class="myimage" alt="Tina" >
-
-      <p> Hi, my name is Tina Lawrence. I have lived in Maryland for most of my life; even though, I have friends and family all over the world and have visited many places in Europe and Asia. I have been a Registered Nurse for over 20 years. 
-        After graduating from the University of Maryland at Baltimore with a BSN, I obtained my RN licensure and traveled with my husband to Hawaii to work at Tripler Army hospital in the Ob/ Gyn Department. There I worked with a variety of 
-        patients from general gynecology issues to educating obstetric patients on preeclampsia and gestational diabetes.</p>
-      <p>After my husband's tour of duty in Hawaii, we returned to Maryland and I began working in Dialysis. My job requested that I help out the Towson Clinic, so I became the Director of Nursing for a Dialysis center/ nursing home. After 
-        reorganizing the clinic and educating the staff on protocols and procedures, I wanted to return closer to home and found a job at a local Johns Hopkins clinic maintaining anticoagulation therapy for patients and doing emergency triage 
-        for the clinic.</p>
-      <p>Through my nursing experience I have found myself working more and more on computers, so with support from family and friends, I have decided to take a huge leap into the computer industry and began a program at Johns Hopkins to 
-        become a full stack web developer.</p>
-        
-    </section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="secMain">
+          <h1>About Me</h1>
+          <img src="assets/images/TinaProfile.jpg" class="myimage" alt="Tina">
+          <p> Hi, my name is Tina Lawrence. I am currently a student at Johns Hopkins University, in a boot camp program
+            to become a full stack web developer. Throughout my career as a nurse, I have always worked with computers.
+            Lately, I've see more reliance on software programs in medicine, so I decided to make the move from using
+            those
+            programs to building them. Once I complete my program, I will be looking for a full time position with a
+            company as a Jr. Developer.</p>
+          <p>I started my nursing career in Dialysis. As I gained more proficiency in that field, my company offered me
+            the opportunity to become the Director of Nursing for a Dialysis center/ nursing home. I spent 2 years
+            reorganizing the clinic and educating the staff on modern dialysis protocols and procedures. Once I got the
+            clinic to a stable state, I decided to return closer to home and found a job at a local Johns Hopkins clinic
+            maintaining anticoagulation therapy for patients and doing emergency triage for the clinic.</p>
+          <p>I have received massive support from my friends and family on this decision to change my career, and I am
+            grateful for it. I am looking forward to the challenge of learning a new career field and applying my
+            existing
+            knowledge as a nurse to help make better products for the future.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row pt-4">
+      <div class="col-12 bg-white">
+        <h1 class="mt-4">Contact</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 bg-white">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required="required">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="jdoe@gmail.com" required="required">
+        <button class="button bg-primary rounded mt-1 text-white">Submit</button>
+      </div>
+      <div class="col-6 bg-white pb-4">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+    </div>
   </div>
 
-  <footer>
-    <div class="clsBody">
-      Copyright &copy; 
-    </div>
+  <footer class="footer fixed-bottom">
+      <div class="container-fluid">
+        <span>Copyright &copy;</span>
+      </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

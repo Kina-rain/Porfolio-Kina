@@ -1,49 +1,118 @@
 <!DOCTYPE html>
-<html>
- <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <title>About | Tina</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>About | Tina</title>
 </head>
 
 <body>
-    <header id="mainheader">
-      <div class="clsBody">
-        <a href="index.html" id="nameTab">Tina</a>
-        <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-        </nav>
-      </div>
-    </header>
-    
-    
-    <div id="mainBody" class="clsBody">
-      <section class="secMain">
-          <h1>Portfolio</h1>
-    
-          <div class="work">
-            <img src="assets/images/Scratch.PNG" alt="Scratch Game">
-                
-            <h3> <a href="https://scratch.mit.edu/projects/332707943/" target="_blank">Scratch Game </a></h3>
-          </div>
-          <div class="work">
-            <img src="assets/images/Catpicassignment.jpg" alt="Prework Assignment">
-    
-            <h3> <a href="https://kina-rain.github.io/prework-about-me/" target="_blank">Prework Assignment</a></h3>
-          </div>    
-        </section>
-    
-  </div>
-    
+  <header>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Resume</a>
+      </li>
+    </ul>
+  </header>
 
-    <footer>
-        <div class="clsBody">
-            Copyright &copy; 
+
+  <div id="mainPortfolio">
+    <h1 class="text-center">Portfolio</h1>
+
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-3">
+        <div class="card work" style="width: 18rem;">
+          <img src="assets/images/Scratch.PNG" class="card-img-top" alt="Scratch Game">
+          <div class="card-body">
+            <h5 class="card-title">Scratch Game</h5>
+            <p class="card-text">First game development.</p>
+            <a href="https://scratch.mit.edu/projects/332707943/" target="_blank" class="btn btn-primary">Scratch
+              Game</a>
+          </div>
         </div>
-    </footer>
-</body> 
+      </div>
+
+      <div class="col-3">
+        <div class="card work" style="width: 18rem;">
+          <img src="assets/images/WeatherScreenShot.png" height="200" width="200" class="card-img-top" alt="Weather">
+          <div class="card-body">
+            <h5 class="card-title">Weather Board</h5>
+            <p class="card-text">Search the local weather and five day forecast. Find the weather in other cities.</p>
+            <a href="https://kina-rain.github.io/WeatherBoard/" target="_blank" class="btn btn-primary">Weather
+              Board</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card work" style="width: 18rem;">
+          <img src="assets/images/Quiz.png" height="233" width="200" class="card-img-top" alt="Quiz Game">
+          <div class="card-body">
+            <h5 class="card-title">Quiz Game</h5>
+            <p class="card-text">Fun quiz game that has a timer and takes score.</p>
+            <a href="https://kina-rain.github.io/JSQuiz/" target="_blank" class="btn btn-primary">Quiz Game</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-3"></div>
+      <div class="col-4">
+           <div class="card work" style="width: 18rem;">
+                <img src="assets/images/calendarScreenShot.png" height="233" width="200" class="card-img-top" alt="Calendar">
+                <div class="card-body">
+                  <h5 class="card-title">Calendar</h5>
+                  <p class="card-text">A daily calendar that can keep track of your schedule.</p>
+                  <a href="https://kina-rain.github.io/Calendar/" target="_blank" class="btn btn-primary">Calendar</a>
+                </div>
+           </div>
+      </div>
+
+      <div class="col-4">
+      <div class="card work" style="width: 18rem;">
+          <img src="assets/images/TeamProject.png" height="233" width="200" class="card-img-top" alt="Team Project">
+          <div class="card-body">
+            <h5 class="card-title">Team Project</h5>
+            <p class="card-text">A team project to learn how to use Git Bash and APIs.</p>
+            <a href="https://kina-rain.github.io/The-Git-Gud-Team/" target="_blank" class="btn btn-primary">Team Project</a>
+          </div>
+     </div>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+
+  <footer>
+   <div class="footer"> 
+    <p>Copyright &copy;</p>
+  </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
