@@ -4,6 +4,8 @@ body {
     line-height: 34px;
     color: #777777;
     background: url("../images/textureBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: -1;
   }
      
